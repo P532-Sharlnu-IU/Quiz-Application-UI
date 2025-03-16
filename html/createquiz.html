@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Make a quiz</title>
+  <link rel="stylesheet" href="../css/navbar.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/cards.css" />
+  <link rel="stylesheet" href="../css/createquiz.css" />
+</head>
+<body>
+<ul class="topnav">
+  <li><a href="../index.html">Home</a></li>
+  <li><a href="addnewquestion.html">Add questions</a></li>
+  <li><a class="active" href="createquiz.html">Create a quiz</a></li>
+  <li><a href="takequiz.html">Take a quiz</a></li>
+  <li class="right"><a href="about.html">About</a></li>
+</ul>
+
+<div class="questions">
+  <h2>Questions Bank</h2>
+  <h3>Click on a question to add it to the quiz.</h3>
+  <div id="list" class="cards"></div>
+</div>
+
+<div class="quiz">
+  <h2 id="quizHeader">The new quiz</h2>
+  Quiz title: <input id="quizTitle" />
+  <button onclick="saveTheQuiz()">Save your changes</button>
+  <button onclick="saveTheQuizAndNew()">
+    Save this quiz and start a new one
+  </button>
+  <h3>
+    If you want to remove a question from the quiz, you can click on the
+    question here and it will be removed from the quiz.
+  </h3>
+  <div id="quiz"></div>
+</div>
+
+<script src="../js/createquiz.js"></script>
+</body>
+</html>

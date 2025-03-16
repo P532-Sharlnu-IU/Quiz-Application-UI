@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz</title>
+  <link rel="stylesheet" href="../css/navbar.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/cards.css" />
+  <link rel="stylesheet" href="../css/quiz.css" />
+</head>
+
+<body>
+<ul id="navigation" class="topnav" >
+  <li><a href="../index.html">Home</a></li>
+  <li><a href="addnewquestion.html">Add questions</a></li>
+  <li><a  href="createquiz.html">Create a quiz</a></li>
+  <li><a class="active" href="takequiz.html">Take a quiz</a></li>
+  <li class="right"><a href="about.html">About</a></li>
+</ul>
+<div id="screen" class="screen">
+  <div id="item" ></div>
+  <div id="controls" class="controls">
+    <button id="backButton" onclick="goBack()" >Previous</button>
+    <label id="stepLabel" ></label>
+    <button id="nextButton" onclick="goNext()" >Next</button>
+  </div>
+</div>
+
+<script src="../js/quiz.js"></script>
+</body>
+</html>

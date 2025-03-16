@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add a question</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cards.css">
+</head>
+<body>
+<ul class="topnav">
+    <li><a  href="../index.html">Home</a></li>
+    <li><a class="active" href="addnewquestion.html">Add questions</a></li>
+    <li><a href="createquiz.html">Create a quiz</a></li>
+    <li><a href="takequiz.html">Take a quiz</a></li>
+    <li class="right"><a href="about.html">About</a></li>
+</ul>
+
+<form>
+    <!-- Question Text -->
+    <label for="questionText">Question:</label><br />
+    <textarea
+            id="questionText"
+            name="description"
+            rows="4"
+            cols="50"
+            required
+    ></textarea
+    ><br />
+
+    <!-- Image Upload -->
+    <label for="imageUpload">Image:</label><br />
+    <input
+            type="file"
+            id="imageUpload"
+            name="imageFile"
+            accept="image/*"
+    /><br />
+
+    <!-- Options -->
+    <label>Options:</label><br />
+    <input type="radio" id="optionA" name="answer" value="A" required />
+    <label for="optionA">A. </label>
+    <input type="text" id="optionAText" name="optionA" required /><br />
+
+    <input type="radio" id="optionB" name="answer" value="B" required />
+    <label for="optionB">B. </label>
+    <input type="text" id="optionBText" name="optionB" required /><br />
+
+    <input type="radio" id="optionC" name="answer" value="C" required />
+    <label for="optionC">C. </label>
+    <input type="text" id="optionCText" name="optionC" required /><br />
+
+    <!-- Submit Button -->
+    <input type="button" value="Add The Question" onclick="add()" />
+</form>
+
+<div id="list" class="cards"></div>
+
+<script src="../js/addquestion.js"></script>
+</body>
+</html>
