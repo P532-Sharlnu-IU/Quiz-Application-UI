@@ -1,4 +1,4 @@
-let host = "http://localhost:8080";
+let host = "https://quiz-service-latest-glur.onrender.com";
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 let quiz = null;
@@ -84,7 +84,7 @@ async function presentTheQuestion(question) {
     let div = document.createElement("div");
     div.className = "card";
     let innerHtml = `
-     <img src="http://localhost:8080/questions/${question.id}/image" alt="question" style="width:100%">
+     <img src="https://quiz-service-latest-glur.onrender.com/questions/${question.id}/image" alt="question" style="width:100%">
      <div class="container">
        <h4><b>${question.id}</b></h4>
        <p>${question.description}</p>

@@ -1,4 +1,4 @@
-let host = "http://localhost:8080";
+let host = "https://quiz-service-latest-glur.onrender.com";
 let quizzes = [];
 displayTheQuizzes();
 
