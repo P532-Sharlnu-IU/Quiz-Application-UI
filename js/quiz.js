@@ -86,7 +86,7 @@ async function presentTheQuestion(question) {
     let innerHtml = `
      <img src="https://quiz-service-latest-glur.onrender.com/questions/${question.id}/image" alt="question" style="width:100%">
      <div class="container">
-       <h4><b>${question.id}</b></h4>
+       <!-- <h4><b>${question.id}</b></h4> -->
        <p>${question.description}</p>
        <form>
            <input type="radio" id="optionA" name="answer" value="A">
